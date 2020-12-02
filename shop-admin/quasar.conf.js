@@ -54,7 +54,7 @@ module.exports = function (ctx) {
       env: {
         API: ctx.dev
           ? 'http://localhost:8080/backend'
-          : 'http://www.bdyapp.cn/backend'
+          : 'http://xxxx'
       },
       // env: ctx.dev
       //   ? { // 在开发状态下我们拥有以下属性
@@ -98,7 +98,7 @@ module.exports = function (ctx) {
       open: true, // opens browser window automatically
       proxy: {
         '/backend': {
-          target: 'http://139.224.223.17:8888',
+          target: 'http://textapi',
           changeOrigin: true,
           pathRewrite: {
             '^/backend': '/'
