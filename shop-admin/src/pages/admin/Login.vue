@@ -24,8 +24,8 @@ export default {
         path: '/home'
       })
       // const params = {
-      //   tel: '18071745549',
-      //   password: 'uWpzqGKomYAV7M9pjLYvMw==',
+      //   tel: '',
+      //   password: '',
       //   loginType: '2',
       //   type: '3'
       // }
