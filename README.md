@@ -33,7 +33,7 @@ quasar build
 ```
 ### 开发代码片段说明
 ```shell
-看了官方文档 推荐使用yarn 
+看了官方文档 推荐使用yarn
 so do it
 ready ~~
 
@@ -160,8 +160,8 @@ export default ({ app, router, store, Vue }) => {
 <q-btn v-permission="['function_edit']" small round push glossy dense icon="edit" color="primary" @click="editFunction(props.value)"></q-btn>
 <q-btn v-permission="['function_del']" small round push glossy dense icon="delete" color="red" @click="delFunction(props.value)"></q-btn>
 ```
-```shell 
-LeftMenuBar.vue     # 模拟菜单权限控制 
+```shell
+LeftMenuBar.vue     # 模拟菜单权限控制
 ```
 
 ![菜单](./shop-admin/src/statics/img/menu.png)
@@ -191,8 +191,8 @@ LeftMenuBar.vue     # 模拟菜单权限控制
 │  │  └─LeftMenuBar       // 左侧菜单
 │  │  └─LeftSubMenuBar    // 递归子菜单
 │  ├─css
-│  ├─data     
-│  │  └─menu      // 模拟菜单数据  
+│  ├─data
+│  │  └─menu      // 模拟菜单数据
 │  ├─layouts      // 布局
 │  │  └─Admin       // 管理员
 │  │  └─Seller    // 商家
@@ -212,7 +212,7 @@ LeftMenuBar.vue     # 模拟菜单权限控制
 │  │          └─component
 │  ├─plugins
 │  ├─router
-│  │  └─index      // 
+│  │  └─index      //
 │  │  └─routes    // 路由菜单配置
 │  ├─store
 │  │  └─modules
@@ -254,13 +254,3 @@ yarn global add @quasar/cli
 
 
 ```
-
-```js
-token
-https://www.yht7.com/news/115473
-
-menu
-https://quasar.dev/vue-components/expansion-item#QExpansionItem-API
-http://www.quasarchs.com/vue-components/menu/
-https://blog.csdn.net/qq_41912398/article/details/108601413
-``` 
