@@ -25,14 +25,12 @@
       :breakpoint="400"
 
     >
-      <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;">
-        <div class="">
+      <q-scroll-area class="left-bar" style="height: calc(100% - 150px); margin-top: 150px;">
           <LeftMenuBar/>
-        </div>
       </q-scroll-area>
 
-      <q-img class="absolute-full" src="../statics/img/left-bg.jpg" style="z-index:-1;">
-        <q-img class="absolute-top" src="../statics/img/left-bg.jpg" style="height: 150px;">
+      <!-- <q-img class="absolute-full" src="../statics/img/left-bg.jpg" style="z-index:-2;"> -->
+        <q-img class="absolute-top" src="../statics/img/left-bg.jpg" style="height: 150px;z-index:-1;">
             <div class="absolute-bottom bg-transparent">
               <q-avatar size="56px" class="q-mb-sm">
                 <img src="https://cdn.quasar.dev/img/boy-avatar.png">
@@ -41,7 +39,7 @@
               <div class="text-grey-13">管理员</div>
             </div>
           </q-img>
-      </q-img>
+      <!-- </q-img> -->
     </q-drawer>
 
     <!-- (Optional) The Footer -->
@@ -192,3 +190,23 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.left-bar {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>
