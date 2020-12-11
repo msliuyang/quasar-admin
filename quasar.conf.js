@@ -58,10 +58,10 @@ module.exports = function (ctx) {
       },
       // env: ctx.dev
       //   ? { // 在开发状态下我们拥有以下属性
-      //     API: JSON.stringify('https://139.224.223.17:8888/backend')
+      //     API: JSON.stringify('https://dev:8888/backend')
       //   }
       //   : { // 在构建状态（生产版本）下
-      //     API: JSON.stringify('https://www.bdy.cn/backend')
+      //     API: JSON.stringify('https://product/backend')
       //   },
 
       // transpile: false,
@@ -110,7 +110,7 @@ module.exports = function (ctx) {
       //   // change xxx-api/login => mock/login
       //   // detail: https://cli.vuejs.org/config/#devserver-proxy
       //   [process.env.API]: {
-      //     target: 'http://139.224.223.17:8888',
+      //     target: 'http://dev:8888',
       //     changeOrigin: true,
       //     pathRewrite: {
       //       ['^' + process.env.API]: '/'
