@@ -22,13 +22,16 @@ export default {
     this.getMenuList()
   },
   methods: {
+    getLoginType() {
+      return localStorage.getItem('loginType') || ''
+    },
     getMenuList() {
       // this.$store.getters.userInfo.id
       // console.log(this.$route.path)
-      const loginType = this.$route.path
-      if (loginType === '/roleList') {
+      const loginType = this.getLoginType()
+      if (loginType === 'admin') {
         this.menuList = Menu.adminMenu
-      } else if (loginType === '/storeInfo') {
+      } else if (loginType === 'seller') {
         this.menuList = Menu.sellerMenu
       } else {
         this.menuList = []

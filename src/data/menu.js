@@ -28,15 +28,15 @@ const sellerMenu = [
 const adminMenu = [
   {
     icon: 'feedback',
-    label: '店铺审核',
-    path: '/storeInfo',
+    label: '角色管理',
+    path: '/roleList',
     btns: ['add', 'delete'],
     hidden: false
   },
   {
     icon: 'feedback',
-    label: '商品审核',
-    path: '/goodsAudit',
+    label: '用户管理',
+    path: '/UserList',
     hidden: false
   },
   {
@@ -47,13 +47,13 @@ const adminMenu = [
       {
         icon: 'perm_identity',
         label: '轮播图',
-        path: '/banner',
+        path: '/#',
         btns: ['update', 'delete']
       },
       {
         icon: 'delete',
         label: '活动信息',
-        path: '/activityInfo',
+        path: '/#',
         btns: ['update', 'select']
       }
     ],
@@ -62,25 +62,25 @@ const adminMenu = [
   {
     icon: 'feedback',
     label: '订单管理',
-    path: '/orderManagement',
+    path: '/#',
     hidden: false
   },
   {
     icon: 'feedback',
     label: '佣金管理',
-    path: '/commissionManagement',
+    path: '/#',
     hidden: false
   },
   {
     icon: 'feedback',
     label: '用户管理',
-    path: '/userManagement',
+    path: '/authorityList',
     hidden: false
   },
   {
     icon: 'feedback',
     label: '白名单',
-    path: '/whiteList',
+    path: '/authorityList',
     hidden: false
   },
   {
@@ -98,7 +98,7 @@ const adminMenu = [
   {
     icon: 'feedback',
     label: 'App管理',
-    path: '/appManagement',
+    path: '/authorityList',
     hidden: false
   }
 ]
@@ -107,7 +107,7 @@ const allMenu = [
   {
     icon: 'feedback',
     label: '店铺审核',
-    path: '/storeInfo',
+    path: '/authorityList',
     btns: [
       {
         label: '新增',
@@ -133,7 +133,7 @@ const allMenu = [
   {
     icon: 'feedback',
     label: '商品审核',
-    path: '/goodsAudit',
+    path: '/authorityList',
     btns: [
       {
         label: '新增',
@@ -165,13 +165,13 @@ const allMenu = [
       {
         icon: 'perm_identity',
         label: '轮播图',
-        path: '/banner',
+        path: '/authorityList',
         btns: []
       },
       {
         icon: 'delete',
         label: '活动信息',
-        path: '/activityInfo',
+        path: '/authorityList',
         btns: []
       }
     ],
@@ -180,28 +180,28 @@ const allMenu = [
   {
     icon: 'feedback',
     label: '订单管理',
-    path: '/orderManagement',
+    path: '/authorityList',
     btns: [],
     hidden: false
   },
   {
     icon: 'feedback',
     label: '佣金管理',
-    path: '/commissionManagement',
+    path: '/authorityList',
     btns: [],
     hidden: false
   },
   {
     icon: 'feedback',
     label: '用户管理',
-    path: '/userManagement',
+    path: '/authorityList',
     btns: [],
     hidden: false
   },
   {
     icon: 'feedback',
     label: '白名单',
-    path: '/whiteList',
+    path: '/authorityList',
     btns: [],
     hidden: false
   },
@@ -222,7 +222,7 @@ const allMenu = [
   {
     icon: 'feedback',
     label: 'App管理',
-    path: '/appManagement',
+    path: '/authorityList',
     btns: [],
     hidden: false
   }

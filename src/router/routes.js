@@ -12,10 +12,11 @@ const routes = [
     path: '/home',
     component: () => import('layouts/Admin.vue'),
     children: [
+      { path: '/roleList', component: () => import('pages/admin/roleManagement/RoleList.vue') },
+      { path: '/userList', component: () => import('pages/admin/userManagement/UserList.vue') },
       { path: '/adminTest', component: () => import('pages/Index.vue') },
       { path: '/storeList', component: () => import('pages/admin/storeManagement/StoreList.vue') },
-      { path: '/authorityList', component: () => import('pages/admin/authorityManagement/AuthorityList.vue') },
-      { path: '/roleList', component: () => import('pages/admin/roleManagement/RoleList.vue') }
+      { path: '/authorityList', component: () => import('pages/admin/authorityManagement/AuthorityList.vue') }
     ]
   },
   {

@@ -3,7 +3,6 @@
     <div class="row q-pa-md no-wrap q-col-gutter-md">
       <div class="col-md-3">
         <q-input
-            class="bg-white"
             filled
             stack-label
             label="请输入角色名称"
@@ -15,7 +14,7 @@
           />
       </div>
       <div class="col-md-3">
-        <q-field label="角色类型" class="bg-white"  stack-label standout :dense="true">
+        <q-field label="角色类型"  stack-label standout :dense="true">
           <template v-slot:control>
             <q-radio keep-color v-model="userRole.type" val="seller" label="商家" color="orange" />
             <q-radio keep-color v-model="userRole.type" val="admin" label="管理员" color="red" />
@@ -25,7 +24,7 @@
       </div>
 
       <div class="col-md-3">
-        <q-field label="角色状态" class="bg-white"  stack-label standout :dense="true">
+        <q-field label="角色状态" stack-label standout :dense="true">
           <template v-slot:control>
             <q-radio keep-color v-model="userRole.type" val="seller" label="启用" color="green" />
             <q-radio keep-color v-model="userRole.type" val="admin" label="禁用" color="red" />

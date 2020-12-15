@@ -56,8 +56,8 @@ export default {
   data () {
     return {
       loginForm: {
-        telephone: '',
-        passward: ''
+        telephone: '15622333632',
+        passward: '123456'
       }
     }
   },
@@ -66,6 +66,7 @@ export default {
   },
   methods: {
     async handleLogin() {
+      localStorage.setItem('loginType', 'admin')
       this.$router.push({
         path: '/roleList'
       })
