@@ -6,9 +6,9 @@
         <!-- <div style="height: calc(100% - 110px)"> -->
           <q-scroll-area class="fit rounded-borders shadow-3"  bordered>
         <q-list>
-      <template v-for="item in roleList">
+      <template v-for="(item,index) in roleList">
           <q-item-label header :key="item.role">{{item.role}}</q-item-label>
-            <q-item v-for="contact in item.list" :key="contact.id" class="q-my-sm" clickable v-ripple>
+            <q-item v-for="contact in item.list" :key="contact.id" class="q-my-sm" :active=" activeRoleItem === contact.id" active-class="bg-purple-1" clickable v-ripple @click="handleRoleItemClick(contact.id)">
               <q-item-section avatar>
                 <q-avatar v-if="item.id === 1" color="primary" text-color="white">
                   {{ contact.letter }}
@@ -28,7 +28,7 @@
               </q-item-section>
             </q-item>
 
-      <q-separator :key="item.id"/>
+      <q-separator :key="item.role+index"/>
       </template>
     </q-list>
 </q-scroll-area>
@@ -58,6 +58,7 @@ export default {
   },
   data() {
     return {
+      activeRoleItem: '',
       roleList: roleList,
       value: '启用'
     }
@@ -67,6 +68,11 @@ export default {
   },
   created() {
 
+  },
+  methods: {
+    handleRoleItemClick(roleId) {
+      this.activeRoleItem = roleId
+    }
   }
 }
 </script>
